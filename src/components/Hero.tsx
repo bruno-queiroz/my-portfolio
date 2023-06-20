@@ -1,16 +1,17 @@
 import { BsGithub as Githubicon } from "react-icons/bs";
 
 import { FaLinkedinIn as LinkInIcon } from "react-icons/fa";
+import LinkIcon from "./LinkIcon";
 
 const Hero = () => {
   return (
     <section className="flex justify-center p-4">
       <div className="flex flex-col max-w-[1200px] w-full mt-4">
-        <span>Hi my name is</span>
+        <span className="text-primary font-semibold">Hi my name is</span>
 
-        <h1 className="flex flex-col gap-2 text-primary font-bold text-[4rem] leading-[4rem]">
-          <span>Bruno Queiroz</span>
-          <span>I do Web Devolopment</span>
+        <h1 className="flex flex-col gap-2 font-bold text-[4rem] leading-[4rem]">
+          <span className="text-gray-300">Bruno Queiroz</span>
+          <span className="text-gray-300">I do Web Devolopment</span>
         </h1>
 
         <p className="max-w-[600px] mt-8">
@@ -21,15 +22,16 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-2 text-lg mt-4">
-          <a href="" className="border-white border-[3px] p-2 rounded-full">
+          <LinkIcon href="#">
             <Githubicon />
-          </a>
-          <a href="" className="border-white border-[3px] p-2 rounded-full">
+          </LinkIcon>
+
+          <LinkIcon href="#">
             <LinkInIcon />
-          </a>
+          </LinkIcon>
         </div>
 
-        <button className="w-[max-content] border-primary border-[3px] p-2 rounded mt-8">
+        <button className="w-[max-content] border-primary border-[3px] p-2 rounded mt-8 test text-primary test2">
           Reach out
         </button>
       </div>
