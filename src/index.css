@@ -26,3 +26,11 @@
   background: var(--primary);
   transform: scale(1);
 }
+
+.text-glowy-shadow {
+  text-shadow: 0px 0px 10px var(--primary);
+}
+
+.box-glowy-shadow {
+  box-shadow: 0px 0px 10px var(--primary);
+}
