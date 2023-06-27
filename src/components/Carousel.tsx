@@ -8,12 +8,18 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const moveCarouselForward = () => {
-    if (carouselIndex + 1 === 3) return;
+    if (carouselIndex + 1 === imgs.length) {
+      setCarouselIndex(0);
+      return;
+    }
     setCarouselIndex(carouselIndex + 1);
   };
 
   const moveCarouselBackwards = () => {
-    if (carouselIndex === 0) return;
+    if (carouselIndex === 0) {
+      setCarouselIndex(imgs.length - 1);
+      return;
+    }
     setCarouselIndex(carouselIndex - 1);
   };
 
