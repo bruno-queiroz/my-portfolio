@@ -23,6 +23,8 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
     setCarouselIndex(carouselIndex - 1);
   };
 
+  const carouselPositionIndicator = Array.from({ length: imgs.length });
+
   return (
     <div className="flex flex-col">
       <div className="flex flex-1">
@@ -51,9 +53,15 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
         </button>
       </div>
       <div className="flex gap-2 justify-center py-4">
-        <button className="w-3 h-3 rounded-full bg-blue-400" />
-        <button className="w-3 h-3 rounded-full bg-blue-400" />
-        <button className="w-3 h-3 rounded-full bg-blue-400" />
+        {carouselPositionIndicator.map((_, imgPosition) => (
+          <button
+            className={`grid place-items-center bg-black ${
+              imgPosition === carouselIndex && "carousel-position-selected"
+            }  carousel-position-indicator z-10 w-3 h-3 rounded-full relative`}
+            key={imgPosition}
+            onClick={() => setCarouselIndex(imgPosition)}
+          />
+        ))}
       </div>
     </div>
   );
