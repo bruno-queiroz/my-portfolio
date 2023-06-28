@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 :root {
-  --primary: #2ec4b6;
+  --primary: #00abf0;
 }
 
-.link-icon-hover::before {
+.link-icon-hover::before,
+.carousel-position-indicator::before {
   content: "";
   transition: transform 300ms;
   position: absolute;
@@ -19,7 +20,8 @@
 }
 
 .link-icon-hover:hover::before,
-.link-icon-hover:focus::before {
+.link-icon-hover:focus::before,
+.carousel-position-selected::before {
   content: "";
   position: absolute;
   z-index: -1;
