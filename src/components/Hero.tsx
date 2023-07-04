@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="flex flex-col max-w-[1200px] w-full mt-4">
         <span className="text-primary font-semibold">Hi my name is</span>
 
-        <h1 className="flex flex-col gap-2 font-bold text-[4rem] leading-[4rem]">
+        <h1 className="flex flex-col gap-2 font-bold text-[3rem] leading-[3rem] smm:text-[4rem] smm:leading-[4rem]">
           <span className="text-gray-300">Bruno Queiroz</span>
           <span className="text-gray-300">
             I do Web Devolopment<span className="text-primary">.</span>
