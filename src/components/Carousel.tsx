@@ -3,6 +3,10 @@ import {
   MdArrowBackIos as LeftArrow,
   MdArrowForwardIos as RightArrow,
 } from "react-icons/md";
+import {
+  TbArrowBadgeLeft as MobileLeftArrow,
+  TbArrowBadgeRight as MobileRightArrow,
+} from "react-icons/tb";
 
 const Carousel = ({ imgs }: { imgs: string[] }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
@@ -29,7 +33,7 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
     <div className="flex flex-col">
       <div className="flex flex-1">
         <button
-          className="bg-black/70 text-primary text-lg rounded-tl-lg rounded-bl-lg"
+          className="bg-black/70 text-primary hidden smm:block text-lg rounded-tl-lg rounded-bl-lg"
           onClick={moveCarouselBackwards}
         >
           <LeftArrow />
@@ -52,13 +56,19 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
           </div>
         </div>
         <button
-          className="bg-black/70 text-primary text-lg rounded-tr-lg rounded-br-lg"
+          className="bg-black/70 text-primary hidden smm:block text-lg rounded-tr-lg rounded-br-lg"
           onClick={moveCarouselForward}
         >
           <RightArrow />
         </button>
       </div>
-      <div className="flex gap-2 justify-center py-4">
+      <div className="flex gap-2 justify-center py-4 items-center">
+        <button
+          className="p-2 rounded-md text-primary mr-4 bg-black/70 smm:hidden"
+          onClick={moveCarouselBackwards}
+        >
+          <MobileLeftArrow />
+        </button>
         {carouselPositionIndicator.map((_, imgPosition) => (
           <button
             className={`grid place-items-center bg-black/75 ${
@@ -68,6 +78,12 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
             onClick={() => setCarouselIndex(imgPosition)}
           />
         ))}
+        <button
+          className="p-2 rounded-md text-primary ml-4 bg-black/70 smm:hidden"
+          onClick={moveCarouselForward}
+        >
+          <MobileRightArrow />
+        </button>
       </div>
     </div>
   );
