@@ -21,7 +21,7 @@ const Header = () => {
 
         <nav>
           <ul
-            className={`flex flex-col sm:flex-row sm:translate-x-0 gap-4 text-lg text-center fixed right-0 w-[60%] transition-transform z-30 bg-[#000814] top-0 h-full sm:relative ${
+            className={`flex flex-col sm:flex-row sm:translate-x-0 gap-4 text-lg text-center fixed right-0 w-[60%] transition-transform z-30 bg-[#081b29] top-0 h-full sm:relative ${
               isNavAcitve ? "translate-x-0" : "translate-x-[100%]"
             }`}
           >
