@@ -1,59 +1,65 @@
 import { useState } from "react";
-import { RiMenuFoldLine as MenuIcon } from "react-icons/ri";
-import { LuPanelRightClose as CloseIcon } from "react-icons/lu";
+import { RiMenu5Fill as MenuIcon } from "react-icons/ri";
 
 const Header = () => {
   const [isNavAcitve, setIsNavActive] = useState(false);
 
-  const openNav = () => {
-    setIsNavActive(true);
+  const toggleNav = () => {
+    setIsNavActive(!isNavAcitve);
   };
 
   const closeNav = () => {
     setIsNavActive(false);
   };
   return (
-    <div className="flex justify-center px-4 py-6">
-      <header className="flex justify-between p-4 rounded-[100vh] w-full border-transparent border-[3px] border-l-primary border-l-[3px] border-r-primary border-r-[3px]">
+    <div className="flex justify-center px-4 py-8 ">
+      <header className="flex justify-between rounded-[100vh] w-full ">
         <a href="#" className="font-semibold text-lg">
           {"<Bruno Queiroz />"}
         </a>
 
-        <nav>
+        <nav className="grid place-content-center relative">
           <ul
-            className={`flex flex-col sm:flex-row sm:translate-x-0 gap-4 text-lg text-center fixed right-0 w-[60%] transition-transform z-30 bg-[#081b29] top-0 h-full sm:relative ${
-              isNavAcitve ? "translate-x-0" : "translate-x-[100%]"
+            className={`flex flex-col sm:flex-row sm:relative sm:scale-y-100 sm:p-0 sm:bg-transparent sm:top-0 sm:translate-x-0 sm:gap-4 scale-y-0 text-lg text-center absolute rounded-md top-[100%] duration-300 right-0 transition-transform z-30 backdrop-blur-sm bg-black/30 origin-top ${
+              isNavAcitve ? "scale-y-100" : "scale-y-0"
             }`}
           >
-            <button
-              className={`text-4xl my-4 mx-2 w-[max-content] sm:hidden`}
-              onClick={closeNav}
-            >
-              <CloseIcon />
-            </button>
             <li>
-              <a href="#" onClick={closeNav}>
+              <a
+                href="#"
+                onClick={closeNav}
+                className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
+                  isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
+                }`}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#" onClick={closeNav}>
+              <a
+                href="#"
+                onClick={closeNav}
+                className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
+                  isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
+                }`}
+              >
                 Projects
               </a>
             </li>
             <li>
-              <a href="#" onClick={closeNav}>
+              <a
+                href="#"
+                onClick={closeNav}
+                className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
+                  isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
+                }`}
+              >
                 Contact
               </a>
             </li>
           </ul>
-          <div
-            className={`${
-              !isNavAcitve && "hidden"
-            } sm:hidden fixed right-0 top-0 left-0 bottom-0 bg-black/50 z-20`}
-            onClick={closeNav}
-          />
-          <button className="text-2xl sm:hidden" onClick={openNav}>
+
+          <button className="text-2xl sm:hidden" onClick={toggleNav}>
             <MenuIcon />
           </button>
         </nav>
