@@ -2,6 +2,7 @@ import { HiOutlineExternalLink as VisitIcon } from "react-icons/hi";
 import { BsGithub as Githubicon } from "react-icons/bs";
 import { Project } from "../content/projects";
 import Carousel from "./Carousel";
+import TechMiniCard from "./TechMiniCard";
 
 const ProjectCard = ({
   description,
@@ -19,11 +20,9 @@ const ProjectCard = ({
 
         <p>{description}</p>
 
-        <div className="flex gap-2 flex-wrap">
+        <div className="flex gap-1 flex-wrap">
           {technologies.map((tech, i) => (
-            <span className="p-2 bg-black/70 rounded" key={i}>
-              {tech}
-            </span>
+            <TechMiniCard {...tech} key={i} />
           ))}
         </div>
 
@@ -31,7 +30,7 @@ const ProjectCard = ({
           <a
             href={github}
             target="_blank"
-            className="flex gap-1 items-center py-2 px-4 rounded bg-cyan-400 text-black font-semibold"
+            className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-white font-semibold"
           >
             <Githubicon />
             Github Code
@@ -39,7 +38,7 @@ const ProjectCard = ({
           <a
             href={host}
             target="_blank"
-            className="flex gap-1 items-center py-2 px-4 rounded bg-cyan-400 text-black font-semibold"
+            className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-primary font-semibold"
           >
             <VisitIcon />
             Visit
