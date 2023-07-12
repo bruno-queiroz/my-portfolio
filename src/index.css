@@ -30,13 +30,21 @@
 }
 
 .hero-height {
-  min-height: calc(100vh - 112px);
+  min-height: calc(100vh - 112px + 95px);
 }
 
 .text-glowy-shadow {
   text-shadow: 0px 0px 10px var(--primary);
 }
 
-.box-glowy-shadow {
-  box-shadow: 0px 0px 10px var(--primary);
+.bg-gradient {
+  background: rgb(2, 8, 12);
+  background: linear-gradient(
+    87deg,
+    rgba(2, 8, 12, 1) 0%,
+    rgba(8, 27, 41, 1) 25%,
+    rgba(10, 27, 38, 1) 60%,
+    rgba(20, 50, 70, 1) 93%,
+    rgba(30, 72, 102, 1) 100%
+  );
 }
