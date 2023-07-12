@@ -8,13 +8,17 @@ interface TechMiniCardProps {
 
 const TechMiniCard = ({ color, Icon, name }: TechMiniCardProps) => {
   return (
-    <div className="flex group test" style={{ color }}>
+    <div className="flex" id="icon" style={{ color }}>
       <div className="p-2 bg-black/70 rounded-tl-md rounded-bl-md">
         <Icon className="text-[24px]" />
       </div>
-      <div className="grid place-items-center rounded-tr-md rounded-br-md p-1 w-0 scale-x-0 text-white text-center group-hover:w-[max-content] group-hover:scale-x-100 transition-transform origin-left bg-black/70">
-        <span className="opacity-0 pr-2 duration-0 group-hover:opacity-100 group-hover: delay-200">
+      <div
+        id="icon-name-container"
+        className="grid place-items-center duration-300 origin-left transition-all rounded-tr-md rounded-br-md text-white bg-black/70"
+      >
+        <span id="icon-name" className="whitespace-pre-wrap">
           {name}
+          {"  "}
         </span>
       </div>
     </div>
