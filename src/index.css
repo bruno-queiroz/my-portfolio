@@ -58,3 +58,26 @@
     rgba(30, 72, 102, 1) 100%
   );
 }
+
+#icon-name-container {
+  width: 0;
+  transform: scaleX(0);
+}
+
+#icon:hover #icon-name-container {
+  width: 100%;
+  transform: scaleX(1);
+}
+
+#icon-name {
+  opacity: 0;
+  transition: none;
+}
+
+#icon:hover #icon-name {
+  opacity: 1;
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  transition-delay: 300ms;
+}
