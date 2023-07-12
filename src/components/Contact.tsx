@@ -56,7 +56,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="flex justify-center p-4 relative">
+    <section className="flex justify-center p-4 relative" id="contact">
       <EmailNotification {...{ notification, setNotification }} />
       <div className="max-w-[700px] w-full">
         <Subtitle>Contact</Subtitle>

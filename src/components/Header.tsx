@@ -12,7 +12,7 @@ const Header = () => {
     setIsNavActive(false);
   };
   return (
-    <div className="flex justify-center px-4 py-8 ">
+    <div className="flex justify-center px-4 py-8 bg-transparent absolute right-0 left-0">
       <header className="flex justify-between rounded-[100vh] w-full ">
         <a href="#" className="font-semibold text-lg">
           {"<Bruno Queiroz />"}
@@ -26,7 +26,7 @@ const Header = () => {
           >
             <li>
               <a
-                href="#"
+                href="#about"
                 onClick={closeNav}
                 className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
@@ -37,7 +37,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#projects"
                 onClick={closeNav}
                 className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
@@ -48,7 +48,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#contact"
                 onClick={closeNav}
                 className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"

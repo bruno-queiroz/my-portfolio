@@ -4,7 +4,7 @@ import Subtitle from "./Subtitle";
 
 const Projects = () => {
   return (
-    <section className="p-4">
+    <section className="p-4" id="projects">
       <div>
         <Subtitle>Projects</Subtitle>
         <div className="flex gap-20 flex-col">
