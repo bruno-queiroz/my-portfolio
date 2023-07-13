@@ -6,7 +6,7 @@ import LinkIcon from "./LinkIcon";
 const Hero = () => {
   return (
     <section className="flex justify-center p-4 hero-height">
-      <div className="flex flex-col max-w-[1200px] w-full mt-4">
+      <div className="flex flex-col max-w-[1350px] w-full mt-[20vh]">
         <span className="text-primary font-semibold">Hi my name is</span>
 
         <h1 className="flex flex-col gap-2 font-bold text-[3rem] leading-[3rem] smm:text-[4rem] smm:leading-[4rem]">
@@ -18,9 +18,6 @@ const Hero = () => {
 
         <p className="max-w-[600px] mt-8">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis
-          cupiditate, error ut ducimus cum quisquam minima molestias sint
-          pariatur sapiente facere rem asperiores ipsum accusantium omnis,
-          beatae alias similique nostrum!
         </p>
 
         <div className="flex gap-2 text-lg mt-4">
@@ -33,7 +30,7 @@ const Hero = () => {
           </LinkIcon>
         </div>
 
-        <button className="w-[max-content] border-primary border-[3px] p-2 rounded mt-8 text-glowy-shadow text-primary box-glowy-shadow">
+        <button className="w-[max-content] transition-shadow duration-500 border-primary border-[3px] py-3 px-8 rounded mt-8 text-glowy-shadow text-primary box-glowy-shadow">
           Reach out
         </button>
       </div>

@@ -5,7 +5,7 @@ import Subtitle from "./Subtitle";
 export const About = () => {
   return (
     <section className="p-4" id="about">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1350px] mx-auto">
         <div className="flex flex-col gap-4 items-center py-4">
           <Subtitle>About</Subtitle>
           <img

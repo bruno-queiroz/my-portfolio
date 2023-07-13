@@ -13,7 +13,7 @@ const Header = () => {
   };
   return (
     <div className="flex justify-center px-4 py-8 bg-transparent absolute right-0 left-0">
-      <header className="flex justify-between rounded-[100vh] w-full ">
+      <header className="flex justify-between rounded-[100vh] w-full max-w-[1350px]">
         <a href="#" className="font-semibold text-lg">
           {"<Bruno Queiroz />"}
         </a>
