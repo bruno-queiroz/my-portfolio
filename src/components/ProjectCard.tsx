@@ -16,7 +16,7 @@ const ProjectCard = ({
     <article className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <Carousel imgs={imgs} />
       <div className="flex flex-col gap-4 w-full mx-auto md:mx-0 ">
-        <h3 className="font-semibold text-lg">{name}</h3>
+        <h3 className="font-semibold text-xl">{name}</h3>
 
         <p>{description}</p>
 
@@ -38,7 +38,7 @@ const ProjectCard = ({
           <a
             href={host}
             target="_blank"
-            className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-primary font-semibold"
+            className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-white font-semibold"
           >
             <VisitIcon />
             Visit
