@@ -13,7 +13,7 @@ const ProjectCard = ({
   technologies,
 }: Project) => {
   return (
-    <article className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <article className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8">
       <Carousel imgs={imgs} />
       <div className="flex flex-col gap-4 w-full mx-auto md:mx-0 ">
         <h3 className="font-semibold text-xl">{name}</h3>
