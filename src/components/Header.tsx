@@ -20,7 +20,7 @@ const Header = () => {
 
         <nav className="grid place-content-center relative">
           <ul
-            className={`flex flex-col sm:flex-row sm:relative sm:scale-y-100 sm:p-0 sm:bg-transparent sm:top-0 sm:translate-x-0 sm:gap-4 scale-y-0 text-lg text-center absolute rounded-md top-[100%] duration-300 right-0 transition-transform z-30 backdrop-blur-sm bg-black/30 origin-top ${
+            className={`flex flex-col sm:flex-row sm:relative sm:scale-y-100 sm:p-0 sm:bg-transparent sm:top-0 sm:translate-x-0 scale-y-0 text-lg text-center absolute rounded-md top-[100%] duration-300 right-0 transition-transform z-30 backdrop-blur-sm bg-black/30 origin-top ${
               isNavAcitve ? "scale-y-100" : "scale-y-0"
             }`}
           >
@@ -28,7 +28,7 @@ const Header = () => {
               <a
                 href="#about"
                 onClick={closeNav}
-                className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
+                className={`block py-2 px-6 sm:px-2 sm:opacity-100 sm:rounded-md hover:bg-black/30 transition-opacity ${
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
                 }`}
               >
@@ -39,7 +39,7 @@ const Header = () => {
               <a
                 href="#projects"
                 onClick={closeNav}
-                className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
+                className={`block py-2 px-6 sm:px-2 sm:opacity-100 sm:rounded-md hover:bg-black/30 transition-opacity ${
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
                 }`}
               >
@@ -50,7 +50,7 @@ const Header = () => {
               <a
                 href="#contact"
                 onClick={closeNav}
-                className={`block py-2 px-6 sm:p-0 sm:opacity-100 sm:hover:bg-transparent hover:bg-black/40 transition-opacity ${
+                className={`block py-2 px-6 sm:px-2 sm:opacity-100 sm:rounded-md hover:bg-black/30 transition-opacity ${
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
                 }`}
               >
