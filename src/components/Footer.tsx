@@ -24,13 +24,13 @@ const Footer = () => {
         <nav className="mt-4 ">
           <ul className="flex flex-col gap-1 text-center">
             <li>
-              <a href="#">About</a>
+              <a href="#about">Sobre</a>
             </li>
             <li>
-              <a href="#">Projects</a>
+              <a href="#projects">Projetos</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#contact">Contato</a>
             </li>
           </ul>
         </nav>

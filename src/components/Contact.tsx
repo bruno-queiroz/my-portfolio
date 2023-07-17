@@ -59,10 +59,10 @@ const Contact = () => {
     <section className="flex justify-center p-4 relative py-12" id="contact">
       <EmailNotification {...{ notification, setNotification }} />
       <div className="max-w-[700px] w-full">
-        <Subtitle>Contact</Subtitle>
+        <Subtitle>Contato</Subtitle>
         <form onSubmit={onSendingEmail} className="flex flex-col gap-8 w-full">
           <label className="flex flex-col gap-1">
-            <span>Your Name</span>
+            <span>Seu Nome</span>
             <input
               ref={nameRef}
               type="text"
@@ -71,7 +71,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col gap-1">
-            <span>Your Email</span>
+            <span>Seu Email</span>
             <input
               ref={emailRef}
               type="email"
@@ -80,7 +80,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col gap-1">
-            <span>Your Message</span>
+            <span>Sua Mensagem</span>
             <textarea
               ref={messageRef}
               required

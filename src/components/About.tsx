@@ -7,7 +7,7 @@ export const About = () => {
     <section className="p-4 py-12" id="about">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[1350px] mx-auto">
         <div className="flex flex-col gap-4 items-center py-4">
-          <Subtitle>About</Subtitle>
+          <Subtitle>Sobre</Subtitle>
           <img
             src=""
             alt=""
@@ -21,7 +21,7 @@ export const About = () => {
           </p>
         </div>
         <div className="py-4">
-          <Subtitle>Technologies</Subtitle>
+          <Subtitle>Tecnologias</Subtitle>
           <div className="flex flex-col gap-4 ">
             {technologies.map((tech, i) => (
               <TechContainer {...tech} key={i} />

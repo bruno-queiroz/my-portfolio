@@ -6,7 +6,7 @@ const Projects = () => {
   return (
     <section className="p-4 max-w-[1350px] mx-auto py-12" id="projects">
       <div>
-        <Subtitle>Projects</Subtitle>
+        <Subtitle>Projetos</Subtitle>
         <div className="flex gap-20 flex-col">
           {projects.map((project, i) => (
             <ProjectCard {...project} key={i} />

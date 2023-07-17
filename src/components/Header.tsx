@@ -32,7 +32,7 @@ const Header = () => {
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
                 }`}
               >
-                About
+                Sobre
               </a>
             </li>
             <li>
@@ -43,7 +43,7 @@ const Header = () => {
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
                 }`}
               >
-                Projects
+                Projetos
               </a>
             </li>
             <li>
@@ -54,7 +54,7 @@ const Header = () => {
                   isNavAcitve ? "opacity-100 delay-200" : "opacity-0 delay-0"
                 }`}
               >
-                Contact
+                Contato
               </a>
             </li>
           </ul>
