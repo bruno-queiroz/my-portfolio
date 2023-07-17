@@ -33,7 +33,7 @@ export const projects = [
     name: "Flash Memo",
     imgs: [flash1, flash2, flash3, flash4],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odit iusto. Explicabo eaque exercitationem quo odio eum, itaque sint totam veniam incidunt? Culpa, id perferendis! Voluptas repellat dolor quam delectus!",
+      "Esse projeto foi inspirado no Anki. Os maiores desafios fazendo esse projeto foram lidar com um banco de dados relacional pela primeira vez e criar um algoritmo para determinar o tempo de revisão de cada carta.",
     technologies: [
       { name: "Typescript", color: "#007acc", Icon: TypescriptLogo },
       { name: "React", color: "#88dded", Icon: ReactLogo },
@@ -46,13 +46,13 @@ export const projects = [
       { name: "Zustand", color: "#5F4926", Icon: ZustandLogo },
     ],
     github: "https://github.com/bruno-queiroz/flash-memo",
-    host: "#",
+    host: "https://flash-memo.vercel.app",
   },
   {
     name: "TierList Creator",
     imgs: [tierList1, tierList2, tierList3],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odit iusto. Explicabo eaque exercitationem quo odio eum, itaque sint totam veniam incidunt? Culpa, id perferendis! Voluptas repellat dolor quam delectus!",
+      "Esse projeto foi inspirado no TierMaker. Os maiores desafios nesse projeto foram criar toda a interatividade de Drag and Drop de cada item e como fazer o hosting das imagens gratuitamente.",
     technologies: [
       { name: "Typescript", color: "#007acc", Icon: TypescriptLogo },
       { name: "React", color: "#88dded", Icon: ReactLogo },
@@ -69,7 +69,7 @@ export const projects = [
     name: "Bomb",
     imgs: [bomb1, bomb2, bomb3, bomb4],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, odit iusto. Explicabo eaque exercitationem quo odio eum, itaque sint totam veniam incidunt? Culpa, id perferendis! Voluptas repellat dolor quam delectus!",
+      "Esse projeto é um simples jogo em que pensei. Os maiores desafios nesse projeto foram para criar um algoritmo que gerasse 3 ou 5 bombas aleatoriamente e uma animação quando o jogador ganha a partida.",
     technologies: [
       { name: "Typescript", color: "#007acc", Icon: TypescriptLogo },
       { name: "React", color: "#88dded", Icon: ReactLogo },
