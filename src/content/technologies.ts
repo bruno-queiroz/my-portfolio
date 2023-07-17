@@ -47,6 +47,6 @@ export const technologies = [
     name: "PostgreSQL",
     color: "#0064a5",
     Icon: PostgresLogo,
-    ex: 35,
+    ex: 45,
   },
 ];
