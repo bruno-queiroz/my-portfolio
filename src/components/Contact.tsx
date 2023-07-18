@@ -38,7 +38,7 @@ const Contact = () => {
           () => {
             setNotification({
               isActive: true,
-              message: "Thanks for reaching out!",
+              message: "Obrigado por entrar em contato!",
             });
             nameRef.current!.value = "";
             messageRef.current!.value = "";
@@ -49,7 +49,7 @@ const Contact = () => {
             setIsSending(false);
             setNotification({
               isActive: true,
-              message: "Something went wrong",
+              message: "Ocorreu um problema",
             });
           }
         );
