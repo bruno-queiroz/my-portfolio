@@ -1,5 +1,6 @@
 import { HiOutlineExternalLink as VisitIcon } from "react-icons/hi";
 import { BsGithub as Githubicon } from "react-icons/bs";
+import { IoMdAlert as AlertIcon } from "react-icons/io";
 import { Project } from "../content/projects";
 import Carousel from "./Carousel";
 import TechMiniCard from "./TechMiniCard";
@@ -11,6 +12,7 @@ const ProjectCard = ({
   imgs,
   name,
   technologies,
+  alert,
 }: Project) => {
   return (
     <article className="grid grid-cols-1 md:grid-cols-2 gap-6 py-8">
@@ -25,6 +27,13 @@ const ProjectCard = ({
             <TechMiniCard {...tech} key={i} />
           ))}
         </div>
+
+        {alert && (
+          <div className="flex gap-1 items-center">
+            <AlertIcon className="text-primary text-xl min-w-[20px]" />
+            <p>{alert}</p>
+          </div>
+        )}
 
         <div className="flex gap-4">
           <a
