@@ -14,10 +14,21 @@ export const About = () => {
             className="w-[60px] h-[60px] rounded-full bg-black/70"
           />
           <p className="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non natus
-            similique voluptas ullam aut harum ipsa labore totam officiis animi
-            nemo molestiae, numquam maiores dolore fugiat excepturi facere ex?
-            Maxime.
+            Tenho {new Date().getFullYear() - 2002} anos de idade e atualmente
+            moro em São José do Rio preto, uma cidade localizada no interior de
+            São Paulo.
+          </p>
+
+          <p className="text-center">
+            Tenho estudado programação com o foco em desenvolvimento web por
+            conta própria há {new Date().getFullYear() - 2021} anos. Comecei
+            aprendendo Javascript, CSS e HTML. Logo após 6 meses comecei a
+            utilizar frameworks e após 1 ano comecei a me aventurar no Backend.
+          </p>
+
+          <p className="text-center">
+            Gosto bastante de criar novos projetos pessoais para consolidar os
+            meus conhecimentos e aprender coisas novas.
           </p>
         </div>
         <div className="py-4">
