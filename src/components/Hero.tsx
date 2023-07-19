@@ -32,9 +32,13 @@ const Hero = () => {
           </LinkIcon>
         </div>
 
-        <button className="w-[max-content] transition-shadow duration-500 border-primary border-[3px] py-3 px-8 rounded mt-8 text-glowy-shadow text-primary box-glowy-shadow">
-          Reach out
-        </button>
+        <a
+          href="#about"
+          id="cta-btn"
+          className="w-[max-content] relative transition-shadow duration-500 border-primary border-[3px] py-3 px-8 rounded mt-8 text-glowy-shadow text-primary box-glowy-shadow"
+        >
+          Sobre mim
+        </a>
       </div>
     </section>
   );
