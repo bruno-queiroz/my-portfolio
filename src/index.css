@@ -41,10 +41,10 @@
 }
 
 .box-glowy-shadow {
-  box-shadow: 0px 0px 8px var(--primary);
+  box-shadow: inset 0px 0px 6px var(--primary), 0px 0px 6px var(--primary);
 }
 .box-glowy-shadow:hover {
-  box-shadow: 0px 0px 16px var(--primary);
+  box-shadow: inset 0px 0px 10px var(--primary), 0px 0px 10px var(--primary);
 }
 
 .bg-gradient {
