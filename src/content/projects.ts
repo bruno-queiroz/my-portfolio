@@ -47,6 +47,8 @@ export const projects = [
     ],
     github: "https://github.com/bruno-queiroz/flash-memo",
     host: "https://flash-memo.vercel.app",
+    alert:
+      "A primeira chamada a aplicação leva mais de 1 min devido ao uso de free host.",
   },
   {
     name: "TierList Creator",
