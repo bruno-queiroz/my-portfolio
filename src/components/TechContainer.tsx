@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { IconType } from "react-icons";
 
 interface TechContainerProps {
