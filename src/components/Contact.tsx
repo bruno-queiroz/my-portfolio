@@ -91,7 +91,7 @@ const Contact = () => {
             className="grid place-items-center w-[85px] h-[45px] mt-4 bg-primary  font-semibold rounded-md mx-auto"
             disabled={isSending}
           >
-            {isSending ? <LoadingSpinner /> : "Send"}
+            {isSending ? <LoadingSpinner /> : "Enviar"}
           </button>
         </form>
       </div>
