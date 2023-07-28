@@ -8,6 +8,7 @@ export default {
       },
       screens: {
         smm: "560px",
+        "laptop-md": "1080px",
       },
     },
   },
