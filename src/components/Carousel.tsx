@@ -38,7 +38,7 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
         >
           <LeftArrow />
         </button>
-        <div className="flex rounded-sm overflow-x-hidden flex-1 aspect-video">
+        <div className="flex overflow-x-hidden flex-1 aspect-video py-0 border-black/70 border-[3px] rounded-md smm:py-1 smm:rounded-none bg-black/70">
           <div
             className="flex transition-transform"
             style={{
@@ -50,7 +50,7 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
                 key={i}
                 src={img}
                 alt="An image showing one page of the project"
-                className="bg-black/70 grow shrink-0 w-full h-full object-contain aspect-video"
+                className="bg-black/70 grow shrink-0 w-full h-full object-cover aspect-video"
               />
             ))}
           </div>
