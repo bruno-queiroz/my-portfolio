@@ -1,14 +1,14 @@
 import flash1 from "../../public/flash-memo-home.png";
 import flash2 from "../../public/flash-memo-decks.png";
 import flash3 from "../../public/flash-memo-add.png";
-import flash4 from "../../public/flash-memo-usage.gif";
-import tierList2 from "../../public/create-tier-list.png";
-import tierList3 from "../../public/tier-list-usage.gif";
-import tierList1 from "../../public/tier-list-home-resized.png";
-import bomb1 from "../../public/bomb-home-page.png";
-import bomb2 from "../../public/bomb-game-mode-page.png";
-import bomb3 from "../../public/bomb-play-page.png";
-import bomb4 from "../../public/bomb-gameplay.gif";
+import flash4 from "../../public/flash-memo-search.png";
+import flash5 from "../../public/flash-memo-usage.gif";
+import tierList1 from "../../public/tier-list-creator-home.png";
+import tierList2 from "../../public/tier-list-creator-create.png";
+import tierList3 from "../../public/tier-list-creator-usage.gif";
+import bomb1 from "../../public/bomb-home.png";
+import bomb2 from "../../public/bomb-game-mode.png";
+import bomb3 from "../../public/bomb-usage.gif";
 
 import {
   SiTypescript as TypescriptLogo,
@@ -31,7 +31,7 @@ import { ReactComponent as PostgresLogo } from "../../public/postgresql.svg";
 export const projects = [
   {
     name: "Flash Memo",
-    imgs: [flash1, flash2, flash3, flash4],
+    imgs: [flash1, flash2, flash3, flash4, flash5],
     description:
       "Esse projeto foi inspirado no Anki. Os maiores desafios fazendo esse projeto foram lidar com um banco de dados relacional pela primeira vez e criar um algoritmo para determinar o tempo de revisão de cada carta.",
     technologies: [
@@ -69,7 +69,7 @@ export const projects = [
   },
   {
     name: "Bomb",
-    imgs: [bomb1, bomb2, bomb3, bomb4],
+    imgs: [bomb1, bomb2, bomb3],
     description:
       "Esse projeto é um simples jogo em que pensei. Os maiores desafios nesse projeto foram para criar um algoritmo que gerasse 3 ou 5 bombas aleatoriamente e uma animação quando o jogador ganha a partida.",
     technologies: [
