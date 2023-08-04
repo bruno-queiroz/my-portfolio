@@ -10,6 +10,9 @@ import bomb1 from "../../public/bomb-home.png";
 import bomb2 from "../../public/bomb-game-mode.png";
 import bomb3 from "../../public/bomb-usage.gif";
 
+import { BiBrain as FlashMemoIcon } from "react-icons/bi";
+import { IoIosPodium as TierListCreatorIcon } from "react-icons/io";
+
 import {
   SiTypescript as TypescriptLogo,
   SiTailwindcss as TailwindLogo,
@@ -22,7 +25,10 @@ import {
 } from "react-icons/si";
 import { TbLetterM as MongooseLogo } from "react-icons/tb";
 import { RiBearSmileFill as ZustandLogo } from "react-icons/ri";
-import { GiTwirlyFlower as ReactQueryLogo } from "react-icons/gi";
+import {
+  GiTwirlyFlower as ReactQueryLogo,
+  GiRollingBomb as BombIcon,
+} from "react-icons/gi";
 // @ts-ignore
 import { ReactComponent as JwtLogo } from "../../public/jwt.svg";
 // @ts-ignore
@@ -47,6 +53,8 @@ export const projects = [
     ],
     github: "https://github.com/bruno-queiroz/flash-memo",
     host: "https://flash-memo.vercel.app",
+    Icon: FlashMemoIcon,
+    iconColor: "white",
     alert:
       "A primeira chamada a aplicação leva mais de 1 min devido ao uso de free host.",
   },
@@ -66,6 +74,8 @@ export const projects = [
     ],
     github: "https://github.com/bruno-queiroz/tier-list",
     host: "https://tier-list-rho.vercel.app/",
+    Icon: TierListCreatorIcon,
+    iconColor: "#BFFF7F",
   },
   {
     name: "Bomb",
@@ -80,6 +90,8 @@ export const projects = [
     ],
     github: "https://github.com/bruno-queiroz/bomb",
     host: "https://bomb-gamma.vercel.app/",
+    Icon: BombIcon,
+    iconColor: "#DC2626",
   },
 ];
 
