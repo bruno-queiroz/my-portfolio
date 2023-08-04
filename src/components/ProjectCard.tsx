@@ -18,7 +18,7 @@ const ProjectCard = ({
 }: Project) => {
   return (
     <article className="grid grid-cols-1 laptop-md:grid-cols-2 gap-6 py-8">
-      <Carousel imgs={imgs} />
+      <Carousel imgs={imgs} name={name} />
       <div className="flex flex-col gap-4 w-full mx-auto laptop-md:mx-0 ">
         <h3 className="flex items-center gap-1 font-semibold text-xl">
           <Icon style={{ color: iconColor }} /> {name}
