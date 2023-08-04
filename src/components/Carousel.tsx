@@ -8,7 +8,7 @@ import {
   TbArrowBadgeRight as MobileRightArrow,
 } from "react-icons/tb";
 
-const Carousel = ({ imgs }: { imgs: string[] }) => {
+const Carousel = ({ imgs, name }: { imgs: string[]; name: string }) => {
   const [carouselIndex, setCarouselIndex] = useState(0);
 
   const moveCarouselForward = () => {
@@ -49,7 +49,7 @@ const Carousel = ({ imgs }: { imgs: string[] }) => {
               <img
                 key={i}
                 src={img}
-                alt="An image showing one page of the project"
+                alt={`Uma imagem mostrando uma página do projeto ${name}`}
                 className="bg-black/70 grow shrink-0 w-full h-full object-cover aspect-video"
               />
             ))}
