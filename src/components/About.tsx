@@ -1,5 +1,6 @@
 import TechContainer from "./TechContainer";
 import { technologies } from "../content/technologies";
+import profilePic from "../../public/profile-pic.jpg";
 import Subtitle from "./Subtitle";
 
 export const About = () => {
@@ -9,9 +10,9 @@ export const About = () => {
         <div className="flex flex-col gap-4 items-center py-4">
           <Subtitle>Sobre</Subtitle>
           <img
-            src=""
-            alt=""
-            className="w-[60px] h-[60px] rounded-full bg-black/70"
+            src={profilePic}
+            alt="uma foto minha"
+            className="w-[120px] h-[120px] object-cover rounded-full bg-black/70"
           />
           <p className="text-center">
             Tenho {new Date().getFullYear() - 2002} anos de idade e atualmente
