@@ -23,11 +23,11 @@ const Hero = () => {
         </p>
 
         <div className="flex gap-2 text-lg mt-4">
-          <LinkIcon href="#">
+          <LinkIcon href="https://github.com/bruno-queiroz">
             <Githubicon />
           </LinkIcon>
 
-          <LinkIcon href="#">
+          <LinkIcon href="https://www.linkedin.com/in/bruno-queiroz-dev">
             <LinkInIcon />
           </LinkIcon>
         </div>
