@@ -9,6 +9,7 @@ const LinkIcon = ({ href, children }: LinkIconProps) => {
   return (
     <a
       href={href}
+      target="_blank"
       className="grid place-items-center z-10 border-primary hover:text-white focus:text-white text-primary border-[3px] p-2 rounded-full relative link-icon-hover"
     >
       {children}
