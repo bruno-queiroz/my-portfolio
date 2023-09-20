@@ -73,7 +73,7 @@ export const projects = [
       { name: "Mongoose", color: "#990000", Icon: MongooseLogo },
     ],
     github: "https://github.com/bruno-queiroz/tier-list",
-    host: "https://tier-list-rho.vercel.app/",
+    host: "https://tier-list-creator-bruno-queiroz.vercel.app/",
     Icon: TierListCreatorIcon,
     iconColor: "#BFFF7F",
   },
