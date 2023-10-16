@@ -54,7 +54,7 @@ const ProjectCard = ({
             className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-white font-semibold"
           >
             <VisitIcon />
-            Visit
+            Visitar
           </a>
         </div>
       </div>
