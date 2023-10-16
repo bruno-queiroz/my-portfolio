@@ -33,6 +33,9 @@ import {
 import { ReactComponent as JwtLogo } from "../../public/jwt.svg";
 // @ts-ignore
 import { ReactComponent as PostgresLogo } from "../../public/postgresql.svg";
+import { SiJest as JestLogo } from "react-icons/si";
+// @ts-ignore
+import { TbBrandCypress as CypressLogo } from "react-icons/tb";
 
 export const projects = [
   {
@@ -87,6 +90,8 @@ export const projects = [
       { name: "React", color: "#88dded", Icon: ReactLogo },
       { name: "TailwindCSS", color: "#38BDF8", Icon: TailwindLogo },
       { name: "Zustand", color: "#5F4926", Icon: ZustandLogo },
+      { name: "Jest", color: "#C21325", Icon: JestLogo },
+      { name: "Cypress", color: "#A3E7CB", Icon: CypressLogo },
     ],
     github: "https://github.com/bruno-queiroz/bomb",
     host: "https://bomb-gamma.vercel.app/",
