@@ -1,5 +1,5 @@
 import { HiOutlineExternalLink as VisitIcon } from "react-icons/hi";
-import { BsGithub as Githubicon } from "react-icons/bs";
+import { BsGithub as GithubIcon } from "react-icons/bs";
 import { IoMdAlert as AlertIcon } from "react-icons/io";
 import { Project } from "../content/projects";
 import Carousel from "./Carousel";
@@ -45,7 +45,7 @@ const ProjectCard = ({
             target="_blank"
             className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-white font-semibold"
           >
-            <Githubicon />
+            <GithubIcon />
             Github Code
           </a>
           <a
