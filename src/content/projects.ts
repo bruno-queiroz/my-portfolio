@@ -9,6 +9,11 @@ import tierList3 from "../../public/tier-list-creator-usage.gif";
 import bomb1 from "../../public/bomb-home.png";
 import bomb2 from "../../public/bomb-game-mode.png";
 import bomb3 from "../../public/bomb-usage.gif";
+import type1 from "../../public/type-faster-home.png";
+import type2 from "../../public/type-faster-practice.png";
+import type3 from "../../public/type-faster-practice-done.png";
+import type4 from "../../public/type-faster-sign-up.png";
+import type5 from "../../public/type-faster-practicing.gif";
 
 import { BiBrain as FlashMemoIcon } from "react-icons/bi";
 import { IoIosPodium as TierListCreatorIcon } from "react-icons/io";
@@ -38,6 +43,27 @@ import { SiJest as JestLogo } from "react-icons/si";
 import { TbBrandCypress as CypressLogo } from "react-icons/tb";
 
 export const projects = [
+  {
+    name: "Typefaster",
+    imgs: [type1, type2, type3, type4, type5],
+    description:
+      "Esse projeto foi inspirado no Anki. Os maiores desafios fazendo esse projeto foram lidar com um banco de dados relacional pela primeira vez e criar um algoritmo para determinar o tempo de revisão de cada carta.",
+    technologies: [
+      { name: "Typescript", color: "#007acc", Icon: TypescriptLogo },
+      { name: "React", color: "#88dded", Icon: ReactLogo },
+      { name: "Prisma", color: "#71E8D4", Icon: PrismaLogo },
+      { name: "ReactQuery", color: "#EF4444", Icon: ReactQueryLogo },
+      { name: "PostrgeSQL", color: "#0064a5", Icon: PostgresLogo },
+      { name: "Express", color: "#ffffff", Icon: ExpressLogo },
+      { name: "TailwindCSS", color: "#38BDF8", Icon: TailwindLogo },
+    ],
+    github: "",
+    host: "",
+    Icon: FlashMemoIcon,
+    iconColor: "white",
+    alert:
+      "A primeira chamada a aplicação leva mais de 1 min devido ao uso de free host.",
+  },
   {
     name: "Flash Memo",
     imgs: [flash1, flash2, flash3, flash4, flash5],
