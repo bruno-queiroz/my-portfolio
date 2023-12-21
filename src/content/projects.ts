@@ -41,6 +41,10 @@ import { ReactComponent as PostgresLogo } from "../../public/postgresql.svg";
 import { SiJest as JestLogo } from "react-icons/si";
 // @ts-ignore
 import { TbBrandCypress as CypressLogo } from "react-icons/tb";
+// @ts-ignores
+import { ReactComponent as DockerLogo } from "../../public/docker.svg";
+// @ts-ignores
+import { ReactComponent as OAuthLogo } from "../../public/oauth.svg";
 
 export const projects = [
   {
@@ -56,9 +60,11 @@ export const projects = [
       { name: "PostgreSQL", color: "#0064a5", Icon: PostgresLogo },
       { name: "Express", color: "#ffffff", Icon: ExpressLogo },
       { name: "TailwindCSS", color: "#38BDF8", Icon: TailwindLogo },
+      { name: "Docker", color: "#fff", Icon: DockerLogo },
+      { name: "OAuth", color: "#000", Icon: OAuthLogo },
     ],
-    github: "",
-    host: "",
+    github: "https://github.com/bruno-queiroz/type-faster",
+    host: "https://type-faster.vercel.app/",
     Icon: FlashMemoIcon,
     iconColor: "white",
     alert:
