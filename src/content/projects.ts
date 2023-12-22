@@ -45,13 +45,15 @@ import { TbBrandCypress as CypressLogo } from "react-icons/tb";
 import { ReactComponent as DockerLogo } from "../../public/docker.svg";
 // @ts-ignores
 import { ReactComponent as OAuthLogo } from "../../public/oauth.svg";
+// @ts-ignores
+import { ReactComponent as TypefasterLogo } from "../../public/type-faster-logo.svg";
 
 export const projects = [
   {
     name: "Typefaster",
     imgs: [type1, type2, type3, type4, type5],
     description:
-      "Esse projeto foi inspirado no Anki. Os maiores desafios fazendo esse projeto foram lidar com um banco de dados relacional pela primeira vez e criar um algoritmo para determinar o tempo de revisão de cada carta.",
+      "Esse projeto foi inspirado no TypeRacer. Os maiores desafios neste projeto foram criar toda a interatividade da digitação que é analizada em tempo real e mostrar um replay da digitação do usuário após ele terminar de digitar seu texto.",
     technologies: [
       { name: "Typescript", color: "#007acc", Icon: TypescriptLogo },
       { name: "React", color: "#88dded", Icon: ReactLogo },
@@ -65,7 +67,7 @@ export const projects = [
     ],
     github: "https://github.com/bruno-queiroz/type-faster",
     host: "https://type-faster.vercel.app/",
-    Icon: FlashMemoIcon,
+    Icon: TypefasterLogo,
     iconColor: "white",
     alert:
       "A primeira chamada a aplicação leva mais de 1 min devido ao uso de free host.",
