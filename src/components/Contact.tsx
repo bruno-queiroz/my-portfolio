@@ -3,6 +3,9 @@ import Subtitle from "./Subtitle";
 import emailjs from "@emailjs/browser";
 import EmailNotification from "./EmailNotification";
 import LoadingSpinner from "./LoadingSpinner";
+import { useLanguage } from "../context/languageContext";
+import { contact_en } from "../content/languages/english/contact";
+import { contact_pt } from "../content/languages/portuguese/contact";
 
 const Contact = () => {
   const [notification, setNotification] = useState({
@@ -55,14 +58,17 @@ const Contact = () => {
         );
     }
   };
+
+  const [languageIndex] = useLanguage();
+  const language = [contact_en, contact_pt];
   return (
     <section className="flex justify-center p-4 relative py-12" id="contact">
       <EmailNotification {...{ notification, setNotification }} />
       <div className="max-w-[700px] w-full">
-        <Subtitle>Contato</Subtitle>
+        <Subtitle>{language[languageIndex].sub_title}</Subtitle>
         <form onSubmit={onSendingEmail} className="flex flex-col gap-8 w-full">
           <label className="flex flex-col gap-1">
-            <span>Seu Nome</span>
+            <span>{language[languageIndex].input1}</span>
             <input
               ref={nameRef}
               type="text"
@@ -71,7 +77,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col gap-1">
-            <span>Seu Email</span>
+            <span>{language[languageIndex].input2}</span>
             <input
               ref={emailRef}
               type="email"
@@ -80,7 +86,7 @@ const Contact = () => {
             />
           </label>
           <label className="flex flex-col gap-1">
-            <span>Sua Mensagem</span>
+            <span>{language[languageIndex].input3}</span>
             <textarea
               ref={messageRef}
               required
@@ -91,7 +97,7 @@ const Contact = () => {
             className="grid place-items-center w-[85px] h-[45px] mt-4 bg-primary  font-semibold rounded-md mx-auto"
             disabled={isSending}
           >
-            {isSending ? <LoadingSpinner /> : "Enviar"}
+            {isSending ? <LoadingSpinner /> : language[languageIndex].send_btn}
           </button>
         </form>
       </div>
