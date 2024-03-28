@@ -5,8 +5,16 @@ import { Project } from "../content/projects";
 import Carousel from "./Carousel";
 import TechMiniCard from "./TechMiniCard";
 
+import { projects_en } from "../content/languages/english/projects";
+import { projects_pt } from "../content/languages/portuguese/projects";
+
+import { alert_en } from "../content/languages/english/alert";
+import { alert_pt } from "../content/languages/portuguese/alert";
+
+import { useLanguage } from "../context/languageContext";
+
 const ProjectCard = ({
-  description,
+  index,
   github,
   host,
   imgs,
@@ -15,7 +23,10 @@ const ProjectCard = ({
   alert,
   Icon,
   iconColor,
-}: Project) => {
+}: Project & { index: number }) => {
+  const [languageIndex] = useLanguage();
+  const language = [projects_en, projects_pt];
+  const alert_language = [alert_en, alert_pt];
   return (
     <article className="grid grid-cols-1 laptop-md:grid-cols-2 gap-6 py-8">
       <Carousel imgs={imgs} name={name} />
@@ -24,7 +35,7 @@ const ProjectCard = ({
           <Icon style={{ color: iconColor }} /> {name}
         </h3>
 
-        <p>{description}</p>
+        <p>{language[languageIndex].description[index]}</p>
 
         <div className="flex gap-1 flex-wrap">
           {technologies.map((tech, i) => (
@@ -35,7 +46,7 @@ const ProjectCard = ({
         {alert && (
           <div className="flex gap-1 items-center">
             <AlertIcon className="text-primary text-xl min-w-[20px]" />
-            <p>{alert}</p>
+            <p>{alert_language[languageIndex]}</p>
           </div>
         )}
 
@@ -54,7 +65,7 @@ const ProjectCard = ({
             className="flex gap-1 items-center py-2 px-4 rounded bg-black/70 text-white font-semibold"
           >
             <VisitIcon />
-            Visitar
+            {language[languageIndex].visit_btn}
           </a>
         </div>
       </div>
