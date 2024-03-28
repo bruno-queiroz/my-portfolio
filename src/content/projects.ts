@@ -69,8 +69,7 @@ export const projects = [
     host: "https://type-faster.vercel.app/",
     Icon: TypefasterLogo,
     iconColor: "white",
-    alert:
-      "A primeira chamada a aplicação leva mais de 1 min devido ao uso de free host.",
+    alert: true,
   },
   {
     name: "Flash Memo",
@@ -92,8 +91,7 @@ export const projects = [
     host: "https://flash-memo.vercel.app",
     Icon: FlashMemoIcon,
     iconColor: "white",
-    alert:
-      "A primeira chamada a aplicação leva mais de 1 min devido ao uso de free host.",
+    alert: true,
   },
   {
     name: "TierList Creator",
