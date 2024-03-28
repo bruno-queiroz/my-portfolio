@@ -2,8 +2,13 @@ import { BsGithub as Githubicon } from "react-icons/bs";
 import { FaLinkedinIn as LinkInIcon } from "react-icons/fa";
 
 import LinkIcon from "./LinkIcon";
+import { header_en } from "../content/languages/english/header";
+import { header_pt } from "../content/languages/portuguese/header";
+import { useLanguage } from "../context/languageContext";
 
 const Footer = () => {
+  const [languageIndex] = useLanguage();
+  const language = [header_en, header_pt];
   return (
     <footer className="bg-black/30 p-4 mt-8">
       <div className="flex flex-col items-center">
@@ -24,13 +29,13 @@ const Footer = () => {
         <nav className="mt-4 ">
           <ul className="flex flex-col gap-1 text-center">
             <li>
-              <a href="#about">Sobre</a>
+              <a href="#about">{language[languageIndex].about}</a>
             </li>
             <li>
-              <a href="#projects">Projetos</a>
+              <a href="#projects">{language[languageIndex].projects}</a>
             </li>
             <li>
-              <a href="#contact">Contato</a>
+              <a href="#contact">{language[languageIndex].contact}</a>
             </li>
           </ul>
         </nav>
